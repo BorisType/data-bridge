@@ -1,0 +1,31 @@
+{
+  "name": "data-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npx btc --include-non-ts-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorisType/data-bridge.git"
+  },
+  "author": "punkhomov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BorisType/data-bridge/issues"
+  },
+  "homepage": "https://github.com/BorisType/data-bridge#readme",
+  "devDependencies": {
+    "@boristype/btc": "^0.0.1-alpha.4",
+    "@boristype/types": "^1.0.0-alpha.1"
+  },
+  "ws:root": "./wt/data-bridge",
+  "ws:apiext": {
+    "name": "ModuleDataBridge",
+    "libs": [
+      "./init.xml"
+    ]
+  }
+}
